@@ -10,7 +10,6 @@ mapboxgl.accessToken =
 export const MapPages = () => {
   const { movementMarker$, newMarker$, coords, addMarkers, updatePosition } =
     useMapBox();
-  const [markers, setMarkers] = useState<MarkerModel>({} as MarkerModel);
   const { socket } = useContext(SocketContext);
 
   useEffect(() => {
